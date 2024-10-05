@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag pricegram:$(date +%s)
       
     - name: Docker Push 
-      run: docker push ${{secrets.DOCKER_USER}}/pricegram
+      run: docker push ${{secrets.DOCKER_USER}}/sirnoish/pricegram
